@@ -11,3 +11,27 @@ alwaysApply: false
 - You should use Next.js as it works best with Vercel. 
 - This frontend will ultimately be deployed on Vercel, but it should be possible to test locally. 
 - Always provide users with a way to run the created UI once you have created it.
+
+### Color Theme Guidelines
+
+- Use a consistent color palette throughout the application.
+- Primary colors should be used for main actions, buttons, and key UI elements.
+- Secondary colors should complement the primary and be used for less prominent elements.
+- Use neutral colors (grays, whites, blacks) for backgrounds, text, and borders.
+- Ensure sufficient color contrast ratio (minimum 4.5:1 for normal text, 3:1 for large text) for accessibility.
+- Avoid using color as the only means of conveying information (consider colorblind users).
+- Support both light and dark mode themes where applicable.
+- Use CSS variables or a theme provider for easy theme switching and maintenance.
+- Recommended palette structure:
+  - `--color-primary`: Main brand color (e.g., #3B82F6 blue)
+  - `--color-primary-hover`: Darker shade for hover states
+  - `--color-secondary`: Complementary accent color
+  - `--color-background`: Page background (#FFFFFF light, #1F2937 dark)
+  - `--color-surface`: Card/container backgrounds
+  - `--color-text-primary`: Main text color
+  - `--color-text-secondary`: Muted/secondary text
+  - `--color-border`: Border colors
+  - `--color-success`: Success states (#10B981 green)
+  - `--color-warning`: Warning states (#F59E0B amber)
+  - `--color-error`: Error states (#EF4444 red)
+- Apply semantic color naming to make the codebase more maintainable.
