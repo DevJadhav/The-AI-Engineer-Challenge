@@ -127,7 +127,14 @@ Vercel will automatically detect Next.js - no configuration needed!
 
 3. Follow the prompts to configure your deployment.
 
-4. Set the `NEXT_PUBLIC_API_URL` environment variable in Vercel dashboard to point to your deployed backend.
+4. **CRITICAL**: Set the `NEXT_PUBLIC_API_URL` environment variable in Vercel dashboard to point to your deployed backend.
+   
+   **See `../VERCEL_ENV_SETUP.md` for detailed step-by-step instructions on how to set this up!**
+   
+   Quick steps:
+   - Go to Vercel Dashboard → Your Project → Settings → Environment Variables
+   - Add: `NEXT_PUBLIC_API_URL` = `https://your-backend-url.vercel.app` (your actual backend URL)
+   - Redeploy your application
 
 **Alternative: Deploy from Root Directory**
 
